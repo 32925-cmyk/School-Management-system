@@ -1,0 +1,6 @@
+{
+  "name": "Aurelian Heights Academy - School Management System",
+  "description": "Production-grade School Management System with administrative operations, student portal, fee processing, attendance tracking, and academic analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

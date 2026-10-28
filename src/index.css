@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-base: #F6F4EF;
+    --bg-surface: #FFFFFF;
+    --bg-elevated: #EDE9DF;
+    --border-subtle: #E2DDD3;
+    --border-strong: #C8C2B5;
+    --text-primary: #121826;
+    --text-secondary: #576075;
+    --text-muted: #8B94A5;
+    --color-primary: #3B3FD8;
+    --color-primary-hover: #3135BA;
+    --color-secondary: #14B8A6;
+    --color-accent: #E8B04B;
+    --status-success: #22A06B;
+    --status-warning: #E5A00D;
+    --status-danger: #D64550;
+    --status-info: #3B82F6;
+  }
+
+  .dark {
+    --bg-base: #0B1020;
+    --bg-surface: #121933;
+    --bg-elevated: #1A2347;
+    --border-subtle: #242E56;
+    --border-strong: #333F73;
+    --text-primary: #F0F4FC;
+    --text-secondary: #A0ABC0;
+    --text-muted: #64748B;
+    --color-primary: #4F52E6;
+    --color-primary-hover: #3B3FD8;
+    --color-secondary: #14B8A6;
+    --color-accent: #E8B04B;
+    --status-success: #22A06B;
+    --status-warning: #E5A00D;
+    --status-danger: #D64550;
+    --status-info: #3B82F6;
+  }
+
+  body {
+    background-color: var(--bg-base);
+    color: var(--text-primary);
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Sora', 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+
+  .font-mono-numbers {
+    font-family: 'JetBrains Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.3);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.5);
+}
+
+/* Print utilities */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .print-break-inside-avoid {
+    break-inside: avoid;
+  }
+}
